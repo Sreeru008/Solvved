@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Soulvved: find a match, together</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body data-scene="0">
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="lg" viewBox="0 0 400 250"><text x="0" y="110" font-family="Poppins,sans-serif" font-weight="800" font-size="157" textLength="375" lengthAdjust="spacingAndGlyphs" style="fill:var(--lt,#000)">SOUL</text><g fill="none" stroke-width="28" stroke-linecap="round" stroke-linejoin="round"><path d="M16,154 L55,224 L94,154" style="stroke:var(--vd,#2e1a8c)"/><path d="M71,154 L110,224 L149,154" style="stroke:var(--vb,#5b4bff)"/></g><text x="172" y="240" font-family="Poppins,sans-serif" font-weight="800" font-size="157" textLength="173" lengthAdjust="spacingAndGlyphs" style="fill:var(--lt,#000)">ED</text><ellipse cx="377" cy="222" rx="19" ry="16" style="fill:var(--dt,#5b4bff)"/></symbol></svg>
+<div class="bg"><div class="bl b1"></div><div class="bl b2"></div><div class="bl b3"></div></div>
+<nav><svg class="lg" role="img" aria-label="Soulvved"><use href="#lg" width="100%" height="100%"/></svg><button class="btn sm" data-join>Be an early member</button></nav>
+<div class="dots" aria-label="Sections"><a href="#s0" class="on" aria-label="Intro"></a><a href="#s1" aria-label="Two logins"></a><a href="#s2" aria-label="Features"></a><a href="#s3" aria-label="FAQ"></a></div>
+
+<section id="s0" class="hero live"><div class="wrap">
+ <div>
+  <h1>Find a match.<br>Together with family.</h1>
+  <p class="lead">Soulvved is a matrimonial app that feels like modern dating, but gives you and your parents their own login, one shared shortlist, and zero guesswork about who liked whom.</p>
+  <button class="btn" data-join>Be an early member</button>
+ </div>
+ <div class="stage" aria-hidden="true">
+  <svg class="link" viewBox="0 0 500 540" preserveAspectRatio="none"><path d="M215 280 C 260 230, 280 330, 330 260"/></svg>
+  <div class="ph a"><div class="card nxt"></div><div class="card top"><div class="av"></div><b>Meera, 27</b><span>Designer · Kochi</span></div><div class="acts"><span>✕</span><span>★</span><span class="y">♥</span></div></div>
+  <div class="ph b"><div class="pb"><h4>Parents' view</h4>
+   <div class="row"><div class="c"></div><div><b>Meera, 27</b><small>Liked by you · Kochi</small></div></div>
+   <div class="row"><div class="c"></div><div><b>Nikhil, 29</b><small>Shortlisted by Aarav</small></div></div>
+   <div class="row"><div class="c"></div><div><b>It's a match!</b><small>Aarav and Meera</small></div></div>
+   <span class="tag">Chat with her parents</span></div></div>
+  <span class="heart">♥</span><span class="heart">♥</span>
+ </div>
+</div></section>
+
+<section id="s1" class="two"><div class="wrap">
+ <h2>Two logins. One subscription.</h2>
+ <p class="lead">One plan covers the prospect and the parents. Each gets an app built for how they actually search.</p>
+ <div class="diag">
+  <svg viewBox="0 0 900 360" preserveAspectRatio="none"><path d="M190 90 C 330 90, 330 90, 450 270"/><path d="M710 90 C 570 90, 570 90, 450 270"/></svg>
+  <button class="node n1 on" data-who="p"><span class="tag">Prospect login</span><h3>Swipe your way</h3><p>Discover people who fit your preferences.</p></button>
+  <button class="node n2" data-who="q"><span class="tag">Parent login</span><h3>Browse in depth</h3><p>Family, horoscope, career and expectations.</p></button>
+  <div class="plan"><b>1 plan</b>2 logins, 1 shared shortlist</div>
+ </div>
+ <div class="panel" id="panel" aria-live="polite"></div>
+ <button class="btn" data-join>Be an early member</button>
+</div></section>
+
+<section id="s2"><div class="wrap">
+ <h2>Features built for each side</h2>
+ <div class="tabs" role="tablist"><button class="on" data-t="p" role="tab">Prospect</button><button data-t="q" role="tab">Parents</button></div>
+ <div class="grid" id="grid"></div>
+ <div style="margin-top:34px"><button class="btn" data-join>Be an early member</button></div>
+</div></section>
+
+<section id="s3" class="faq"><div class="wrap">
+ <div>
+  <h2>Questions families ask</h2>
+  <p class="lead">Still unsure? Join early and we'll answer in person.</p>
+  <button class="btn" data-join>Be an early member</button>
+  <div class="qm" aria-hidden="true"><span>?</span><span>?</span><span>?</span></div>
+ </div>
+ <div id="faq"></div>
+</div></section>
+<footer><div class="ics"><div class="ic3"><svg class="lg" role="img" aria-label="Soulvved"><use href="#lg" width="100%" height="100%"/></svg></div><div class="ic3 k"><svg class="lg" role="img" aria-label="Soulvved"><use href="#lg" width="100%" height="100%"/></svg></div><div class="ic3 g"><svg class="lg" role="img" aria-label="Soulvved"><use href="#lg" width="100%" height="100%"/></svg></div></div><p>Soul + vved (Wed) = Soulvved = solved</p><p>© 2026 Soulvved. Early access preview.</p></footer>
+
+<dialog id="dlg"><button class="x" aria-label="Close" id="cl">×</button>
+ <div id="fm"><h3>Be an early member</h3><p style="color:var(--mute)">Get first access and early-member pricing.</p>
+ <form id="f"><input required name="n" placeholder="Your name" autocomplete="name"><input required type="email" placeholder="Email" autocomplete="email">
+ <select><option>I'm looking for a match</option><option>I'm a parent</option></select>
+ <button class="btn" style="width:100%;margin-top:10px">Join the waitlist</button></form></div>
+ <div id="ok" hidden><h3 id="okt"></h3><p style="color:var(--mute)">You're on the list. We'll email you before launch.</p></div>
+</dialog>
+
+<script src="script.js" defer></script>
+</body>
+</html>
