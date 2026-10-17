@@ -11,10 +11,129 @@
 </head>
 <body data-scene="0">
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="lg" viewBox="0 0 400 250"><text x="0" y="110" font-family="Poppins,sans-serif" font-weight="800" font-size="157" textLength="375" lengthAdjust="spacingAndGlyphs" style="fill:var(--lt,#000)">SOUL</text><g fill="none" stroke-width="28" stroke-linecap="round" stroke-linejoin="round"><path d="M16,154 L55,224 L94,154" style="stroke:var(--vd,#2e1a8c)"/><path d="M71,154 L110,224 L149,154" style="stroke:var(--vb,#5b4bff)"/></g><text x="172" y="240" font-family="Poppins,sans-serif" font-weight="800" font-size="157" textLength="173" lengthAdjust="spacingAndGlyphs" style="fill:var(--lt,#000)">ED</text><ellipse cx="377" cy="222" rx="19" ry="16" style="fill:var(--dt,#5b4bff)"/></symbol></svg>
-<div class="bg"><div class="bl b1"></div><div class="bl b2"></div><div class="bl b3"></div></div>
+<div class="bg"><div class="bl b1"></div><div class="bl b2"></div><div class="bl b3"></div><div class="n-spot" id="spot"></div></div>
 <nav><svg class="lg" role="img" aria-label="Soulvved"><use href="#lg" width="100%" height="100%"/></svg><img class="lgz" src="logo-dark.png" alt="Soulvved"><div class="nr"><div class="tgs"><label class="tg dm"><span>Dark Mode</span><input type="checkbox" id="dk" role="switch"><i class="mn"></i></label><label class="tg"><span>GenZ Mode</span><input type="checkbox" id="gz" role="switch"><i></i></label></div><button class="btn sm" data-join>Be an early member</button></div></nav>
-<div class="dots" aria-label="Sections"><a href="#s0" class="on" aria-label="Intro"></a><a href="#s1" aria-label="Two logins"></a><a href="#s2" aria-label="Features"></a><a href="#s3" aria-label="FAQ"></a></div>
+<div class="dots" id="gd" aria-label="Sections"><a href="#s0" class="on" aria-label="Intro"></a><a href="#s1" aria-label="Two logins"></a><a href="#s2" aria-label="Features"></a><a href="#s3" aria-label="FAQ"></a></div>
 
+<div class="n-prog" aria-hidden="true"><i id="progi"></i></div>
+<div class="dots" id="nd" aria-label="Sections"><a href="#n1" class="on" aria-label="Intro"></a><a href="#n2" aria-label="Discover"></a><a href="#n3" aria-label="Shared shortlist"></a><a href="#n4" aria-label="Matches"></a><a href="#n5" aria-label="Two logins"></a><a href="#n6" aria-label="Features for you"></a><a href="#n7" aria-label="Features for parents"></a><a href="#n8" aria-label="FAQ"></a></div>
+
+<main id="nm">
+<!-- 1 · HERO -->
+<section id="n1" class="n-hero live"><div class="wrap n-hw">
+ <div class="n-copy">
+  <span class="tag rv" style="--i:0">Matrimony, reimagined</span>
+  <h1 class="rv" style="--i:1">Your choice.<br><em>Their blessing.</em></h1>
+  <p class="lead rv" style="--i:2">Soulvved is a matrimonial app that feels like modern dating, but gives you and your parents their own login, one shared shortlist, and zero guesswork about who liked whom.</p>
+  <div class="n-cta rv" style="--i:3"><button class="btn" data-join>Be an early member</button><a class="n-ghost" href="#n2">See how it works <span>↓</span></a></div>
+  <div class="n-stats rv" style="--i:4"><div><b>2</b><span>logins</span></div><div><b>1</b><span>plan</span></div><div><b>0</b><span>guesswork</span></div></div>
+ </div>
+ <div class="n-scene rv" id="scene" style="--i:2">
+  <div class="n-wscale"><div class="n-world" id="world"><div class="n-float">
+   <div class="n-glow"></div><div class="n-ring r1"></div><div class="n-ring r2"></div>
+   <div class="n-deck" id="deck">
+    <div class="n-pc" data-pos="0" style="--c1:#8a7dff;--c2:#2e1a8c"><span class="n-bd">92% match</span><div class="n-av"></div><b>Meera, 27</b><span>Designer · Kochi</span><div class="n-tags"><i>Postgraduate</i><i>Loves travel</i><i>Vegetarian</i></div></div>
+    <div class="n-pc" data-pos="1" style="--c1:#7c6dff;--c2:#2f1b8f"><span class="n-bd">88% match</span><div class="n-av"></div><b>Rohan, 29</b><span>Doctor · Pune</span><div class="n-tags"><i>MBBS, MD</i><i>Fitness</i><i>Family first</i></div></div>
+    <div class="n-pc" data-pos="2" style="--c1:#9c8cff;--c2:#4b34c9"><span class="n-bd">85% match</span><div class="n-av"></div><b>Ananya, 26</b><span>Engineer · Bengaluru</span><div class="n-tags"><i>B.Tech</i><i>Music</i><i>Non-smoker</i></div></div>
+   </div>
+   <div class="n-acts"><button data-a="l" aria-label="Pass">✕</button><button data-a="u" aria-label="Shortlist">★</button><button class="y" data-a="r" aria-label="Like">♥</button></div>
+   <div class="n-chip c1"><i>♥</i>Liked by Mom</div>
+   <div class="n-chip c2"><i>★</i>Shortlisted by Dad</div>
+   <div class="n-chip c3"><i>✓</i>Preferences matched</div>
+  </div></div></div>
+  <p class="n-hint">Move your pointer and try ✕ ★ ♥</p>
+ </div>
+</div></section>
+
+<!-- 2-4 · INTERACTIVE PHONE STORY -->
+<div class="n-story" id="story">
+ <div class="n-pcol"><div class="n-pstage" id="pstage">
+  <div class="n-pglow"></div>
+  <div class="n-pscale">
+   <div class="n-chips" id="chips"></div>
+   <div class="n-pp"><div class="n-ptilt" id="ptilt"><div class="n-pspin" id="pspin"><div class="n-phone" id="phone" role="button" tabindex="0" aria-label="Tap the phone to see the next screen">
+    <div class="n-pf front"><div class="n-sc"><i class="n-isl"></i>
+     <div class="n-scr on"><div class="sk-top"><b>Discover</b><span>Preferences</span></div><div class="sk-card"><div class="sk-av"></div><b>Meera, 27</b><span>Designer · Kochi</span><em>92% match</em></div><div class="sk-acts"><i>✕</i><i>★</i><i class="y">♥</i></div><small class="n-lbl">Screen 1 · add your app screenshot</small><img src="screens/screen-1.png" alt="Soulvved discover screen" onerror="this.remove()"></div>
+     <div class="n-scr"><div class="sk-top"><b>Shared shortlist</b><span>All</span></div>
+      <div class="sk-row"><u></u><div><b>Meera, 27</b><small>Liked by Mom</small></div></div>
+      <div class="sk-row"><u></u><div><b>Nikhil, 29</b><small>Shortlisted by Dad</small></div></div>
+      <div class="sk-row"><u></u><div><b>Isha, 26</b><small>Liked by you</small></div></div>
+      <div class="sk-row"><u></u><div><b>Kabir, 30</b><small>Shortlisted by you</small></div></div>
+      <small class="n-lbl">Screen 2 · add your app screenshot</small><img src="screens/screen-2.png" alt="Soulvved shared shortlist screen" onerror="this.remove()"></div>
+     <div class="n-scr"><div class="sk-top"><b>It's a match</b><span>Today</span></div><div class="sk-heart">♥</div><div class="sk-t">Aarav + Meera</div>
+      <div class="sk-msg">Namaste! Lovely to meet you.</div><div class="sk-msg r">Likewise. Shall we plan a call?</div>
+      <small class="n-lbl">Screen 3 · add your app screenshot</small><img src="screens/screen-3.png" alt="Soulvved match and chat screen" onerror="this.remove()"></div>
+     <i class="n-hb2"></i></div></div>
+    <div class="n-pf back"><div class="n-cam"><i></i><i></i><i></i></div><svg class="lg" role="img" aria-label="Soulvved"><use href="#lg" width="100%" height="100%"/></svg></div>
+   </div></div></div></div>
+   <div class="n-pshadow"></div>
+  </div>
+  <p class="n-hint n-hint2">Tap the phone to turn it</p>
+  <div class="n-steps" id="steps"><i class="on"></i><i></i><i></i></div>
+ </div></div>
+ <div class="n-tcol">
+  <section id="n2" class="n-fs" data-step="0"><div class="n-txt">
+   <span class="tag rv" style="--i:0">01 · Discover</span>
+   <h2 class="rv" style="--i:1">Swipe through people who actually fit.</h2>
+   <p class="lead rv" style="--i:2">Set your preferences once: age, career, location, values and deal-breakers. Soulvved suggests people who match, in a card stack that feels like the apps you already love.</p>
+   <ul class="n-ul rv" style="--i:3"><li><i>✓</i>Suggestions built around your preferences</li><li><i>✓</i>Like, pass or shortlist in a single swipe</li><li><i>✓</i>A compatibility score on every profile</li></ul>
+   <div class="rv" style="--i:4"><button class="btn" data-join>Be an early member</button></div>
+  </div></section>
+  <section id="n3" class="n-fs" data-step="1"><div class="n-txt">
+   <span class="tag rv" style="--i:0">02 · Together</span>
+   <h2 class="rv" style="--i:1">Your parents are in the loop. Not in your way.</h2>
+   <p class="lead rv" style="--i:2">Parents browse detailed profiles and shortlist for you. You see what they liked, they see what you liked, and every pick is labelled with who chose it.</p>
+   <ul class="n-ul rv" style="--i:3"><li><i>✓</i>See the profiles your parents liked and shortlisted</li><li><i>✓</i>Parents see your likes and shortlist too</li><li><i>✓</i>Their picks live in their own tab, never pushed on you</li></ul>
+   <div class="rv" style="--i:4"><button class="btn" data-join>Be an early member</button></div>
+  </div></section>
+  <section id="n4" class="n-fs" data-step="2"><div class="n-txt">
+   <span class="tag rv" style="--i:0">03 · Match</span>
+   <h2 class="rv" style="--i:1">It's a match. Families, meet.</h2>
+   <p class="lead rv" style="--i:2">When two people match, parents are told straight away and can see exactly who their child matched with. They can then talk to each other in a private parent-to-parent chat.</p>
+   <ul class="n-ul rv" style="--i:3"><li><i>✓</i>Parents see every match, and with whom</li><li><i>✓</i>Parent-to-parent chat opens after a mutual match</li><li><i>✓</i>Phone numbers stay hidden until both families agree</li></ul>
+   <div class="rv" style="--i:4"><button class="btn" data-join>Be an early member</button></div>
+  </div></section>
+ </div>
+</div>
+
+<!-- 5 · TWO LOGINS -->
+<section id="n5" class="n-two"><div class="wrap">
+ <div class="n-sec-h"><span class="tag rv" style="--i:0">One plan, two logins</span><h2 class="rv" style="--i:1">Two logins. One subscription.</h2><p class="lead rv" style="--i:2">One plan covers the prospect and the parents. Each gets an app built for how they actually search. Hover a card to explore.</p></div>
+ <div class="n-roles rv" id="roles" style="--i:2">
+  <article class="n-role" data-tilt data-who="p"><div class="n-ri" data-ic="user"></div><span class="tag">Prospect login</span><h3>Your app. Your pace.</h3><p>Swipe-first, preference-driven and personal to you.</p><ul><li>Swipe discovery and preferences</li><li>See what your parents liked and shortlisted</li><li>Match inbox and private chat</li><li>Compatibility score breakdown</li></ul></article>
+  <div class="n-plan2"><div class="n-orb"><div><b>1 plan</b>2 logins<br>1 shared shortlist</div></div></div>
+  <article class="n-role" data-tilt data-who="q"><div class="n-ri" data-ic="users"></div><span class="tag">Parent login</span><h3>Their app. Their depth.</h3><p>Detailed, thoughtful and built for family decisions.</p><ul><li>Detailed family and career profiles</li><li>Like and shortlist for your child</li><li>See every match, and with whom</li><li>Parent-to-parent chat</li></ul></article>
+ </div>
+ <div class="n-ctr rv" style="--i:3"><button class="btn" data-join>Be an early member</button></div>
+</div></section>
+
+<!-- 6 · PROSPECT FEATURES -->
+<section id="n6" class="n-feat"><div class="wrap">
+ <div class="n-sec-h"><span class="tag rv" style="--i:0">For prospects</span><h2 class="rv" style="--i:1">Features built for you</h2><p class="lead rv" style="--i:2">Everything you need to find someone who fits, at your own pace.</p></div>
+ <div class="n-grid" id="gp"></div>
+ <div class="n-ctr rv"><button class="btn" data-join>Be an early member</button></div>
+</div></section>
+
+<!-- 7 · PARENT FEATURES -->
+<section id="n7" class="n-feat"><div class="wrap">
+ <div class="n-sec-h"><span class="tag rv" style="--i:0">For parents</span><h2 class="rv" style="--i:1">Features built for parents</h2><p class="lead rv" style="--i:2">Depth, clarity and a say in the decision, without taking over.</p></div>
+ <div class="n-grid" id="gq"></div>
+ <div class="n-ctr rv"><button class="btn" data-join>Be an early member</button></div>
+</div></section>
+
+<!-- 8 · FAQ (design unchanged) -->
+<section id="n8" class="faq"><div class="wrap">
+ <div>
+  <h2>Questions families ask</h2>
+  <p class="lead">Still unsure? Join early and we'll answer in person.</p>
+  <button class="btn" data-join>Be an early member</button>
+  <div class="qm" aria-hidden="true"><span>?</span><span>?</span><span>?</span></div>
+ </div>
+ <div id="faq2"></div>
+</div></section>
+</main>
+
+<div id="gm">
 <section id="s0" class="hero live"><div class="gz tick"><div><span>no cap 🧢 ✦ main character energy ✨ ✦ it's giving match 💜 ✦ mom approved ✅ ✦ rizz not required 😌 ✦ POV: you found the one 💍 ✦ slay the shortlist 💅 ✦ vibe check passed 🫶 ✦ </span><span>no cap 🧢 ✦ main character energy ✨ ✦ it's giving match 💜 ✦ mom approved ✅ ✦ rizz not required 😌 ✦ POV: you found the one 💍 ✦ slay the shortlist 💅 ✦ vibe check passed 🫶 ✦ </span></div></div><div class="wrap">
  <div>
   <h1 data-g="Find your person.<br>Bring the whole fam 💜">Find a match.<br>Together with family.</h1>
@@ -66,6 +185,7 @@
  </div>
  <div id="faq"></div>
 </div></section>
+</div>
 <footer><div class="ics"><div class="ic3"><svg class="lg" role="img" aria-label="Soulvved"><use href="#lg" width="100%" height="100%"/></svg></div><div class="ic3 k"><svg class="lg" role="img" aria-label="Soulvved"><use href="#lg" width="100%" height="100%"/></svg></div><div class="ic3 g"><svg class="lg" role="img" aria-label="Soulvved"><use href="#lg" width="100%" height="100%"/></svg></div></div><p>Soul + vved (Wed) = Soulvved = solved</p><p>© 2026 Soulvved. Early access preview.</p></footer>
 
 <dialog id="dlg"><button class="x" aria-label="Close" id="cl">×</button>
